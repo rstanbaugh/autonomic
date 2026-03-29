@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "autonomic-cli"
+version = "0.1.0"
+description = "A Python CLI for controlling Autonomic Mirage Media Servers"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+authors = [
+    {name = "Autonomic CLI Contributors"},
+]
+
+dependencies = [
+    "rich>=13.0.0",
+    "pyyaml>=6.0",
+    "python-dotenv>=1.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pytest-cov>=4.0",
+    "pytest-asyncio>=0.21.0",
+]
+
+[project.scripts]
+autonomic-cli = "autonomic_cli.main:cli"
+
+[tool.setuptools]
+packages = ["autonomic_cli"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+
+[tool.coverage.run]
+source = ["autonomic_cli"]

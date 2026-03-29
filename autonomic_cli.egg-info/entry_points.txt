@@ -1,0 +1,2 @@
+[console_scripts]
+autonomic-cli = autonomic_cli.main:cli
