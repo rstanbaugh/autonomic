@@ -1,19 +1,54 @@
-# Python
+# -------------------------
+# Python bytecode
+# -------------------------
 __pycache__/
-*.pyc
-*.pyo
-*.pyd
+*.py[cod]
 
-# OS/editor
+# -------------------------
+# Build / packaging
+# -------------------------
+build/
+dist/
+*.egg-info/
+*.egg
+
+# -------------------------
+# Virtual environments
+# -------------------------
+.venv/
+venv/
+env/
+ENV/
+
+# -------------------------
+# pytest / coverage
+# -------------------------
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# -------------------------
+# Type checking / tooling
+# -------------------------
+.mypy_cache/
+.ruff_cache/
+
+# -------------------------
+# OS / editors
+# -------------------------
 .DS_Store
 .vscode/
 .idea/
 
+# -------------------------
 # Local env / secrets
+# -------------------------
 .env
 .env.*
 !.env.example
 
+# -------------------------
 # Logs / scratch
+# -------------------------
 *.log
-debug.txt

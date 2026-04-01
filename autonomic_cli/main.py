@@ -14,7 +14,8 @@ class AutonomicCLI:
     def __init__(self):
         self.config = Config()
         self.client: Optional[MirageClient] = None
-        self.output_format = "text"
+        self.
+        = "text"
 
     def connect(self) -> CLIResponse:
         """Establish connection to Mirage server."""
